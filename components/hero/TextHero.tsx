@@ -1,5 +1,7 @@
 import React from "react";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
+import MagicButton from "./MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const TextHero = () => {
   return (
@@ -22,12 +24,17 @@ export const TextHero = () => {
             Hi, I&apos;m Alejandro, Software Developer based in Colombia.{" "}
           </p>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Trasforming Concepts into Seamless Experiences "
+            className="text-center text-[40px] md:text-4xl lg:text-5xl"
+            words="Trasforming Concepts into Seamless User Experiences"
           />
-          <p className="text-center md:tracking-wider my-3 text-sm md:text-lg lg:text-2xl">
-            Welcome!
-          </p>
+
+          <a href="#about">
+            <MagicButton
+              title="Show my Work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
